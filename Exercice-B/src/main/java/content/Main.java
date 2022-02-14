@@ -4,15 +4,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.api.java.function.ReduceFunction;
 import org.apache.spark.sql.*;
-import org.apache.spark.sql.catalyst.expressions.Expression;
-import org.apache.spark.sql.types.*;
-import scala.Function1;
-import scala.Function2;
-import scala.Int;
-import scala.PartialFunction;
-import scala.collection.IterableOnce;
-
-import static org.apache.spark.sql.functions.col;
 
 public class Main {
 
@@ -52,6 +43,12 @@ public class Main {
         result.show(100);
     }
 
+    public static void q4(SparkSession spark){
+        Dataset<Row> result = spark.sql("SELECT COUNT(DISTINCT _c0) FROM global_temp.integers");
+        long count = result.collectAsList().get(0).getLong(0);
+        System.out.println("Question 4 - " + count);
+    }
+
     public static void main(String[] args) throws AnalysisException {
 
         Logger.getLogger("org").setLevel(Level.ERROR);
@@ -65,5 +62,6 @@ public class Main {
         q1(integers);
         q2(integers);
         q3(spark);
+        q4(spark);
     }
 }
