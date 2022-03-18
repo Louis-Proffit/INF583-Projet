@@ -1,18 +1,9 @@
-package content;
+package partA;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.api.java.function.ReduceFunction;
 import org.apache.spark.sql.*;
-import org.apache.spark.sql.catalyst.expressions.Expression;
-import org.apache.spark.sql.types.*;
-import scala.Function1;
-import scala.Function2;
-import scala.Int;
-import scala.PartialFunction;
-import scala.collection.IterableOnce;
-
-import static org.apache.spark.sql.functions.col;
 
 public class Main {
 
