@@ -15819,7 +15819,7 @@
 15818 Category:Articles to be expanded
 15819 Category:Articles to be expanded since July 2007
 15820 Category:Articles to be updated
-15821 Category:Articles using content from the English Wikipedia
+15821 Category:Articles using partA from the English Wikipedia
 15822 Category:Articles with dead external links
 15823 Category:Articles with sections needing expansion
 15824 Category:Articles with unsourced statements
@@ -18988,10 +18988,10 @@
 18987 Category:Magnoliales
 18988 Category:Magnoliopsida
 18989 Category:Maharashtra
-18990 Category:content.Main Belt asteroids
-18991 Category:content.Main Page
-18992 Category:content.Main Page templates
-18993 Category:content.Main stations in Berlin
+18990 Category:partA.Main Belt asteroids
+18991 Category:partA.Main Page
+18992 Category:partA.Main Page templates
+18993 Category:partA.Main stations in Berlin
 18994 Category:Maine
 18995 Category:Major League Baseball
 18996 Category:Major League Baseball players
@@ -27863,7 +27863,7 @@
 27862 East Brewton, Alabama
 27863 East Chicago, Indiana
 27864 East China Sea
-27865 East Coast content.Main Line
+27865 East Coast partA.Main Line
 27866 East Coast blues
 27867 East Coast of the United States
 27868 East Coker, Somerset
@@ -29197,7 +29197,7 @@
 29196 Exhibitionism
 29197 Exile
 29198 Exile (Japanese band)
-29199 Exile on content.Main St.
+29199 Exile on partA.Main St.
 29200 Exira, Iowa
 29201 Existence
 29202 Existentialism
@@ -30680,7 +30680,7 @@
 30679 Frankfurt International Airport
 30680 Frankfurt Stock Exchange
 30681 Frankfurt U-Bahn
-30682 Frankfurt am content.Main
+30682 Frankfurt am partA.Main
 30683 Frankfurt an der Oder
 30684 Frankfurter Allgemeine Zeitung
 30685 Frankfurter Rundschau
@@ -30783,7 +30783,7 @@
 30782 Free Software Foundation
 30783 Free agent
 30784 Free and open source software
-30785 Free content
+30785 Free partA
 30786 Free good
 30787 Free kick
 30788 Free market
@@ -36806,7 +36806,7 @@
 36805 Johann Sebastian Bach
 36806 Johann Strauss I
 36807 Johann Strauss II
-36808 Johann Wolfgang Goethe University of Frankfurt am content.Main
+36808 Johann Wolfgang Goethe University of Frankfurt am partA.Main
 36809 Johann Wolfgang von Goethe
 36810 Johanna Spyri
 36811 Johannes Andreas Grib Fibiger
@@ -37709,7 +37709,7 @@
 37708 Keep Holding On
 37709 Keerbergen
 37710 Kehal Urban
-37711 Keihan content.Main Line
+37711 Keihan partA.Main Line
 37712 Keir Hardie
 37713 Keira Knightley
 37714 Keith Haring
@@ -41848,30 +41848,30 @@
 41847 Maillé, Vendée
 41848 Mailman
 41849 Mailsi Tehsil
-41850 content.Main
-41851 content.Main Page
-41852 content.Main Page/Article 1
-41853 content.Main Page/Article 10
-41854 content.Main Page/Article 11
-41855 content.Main Page/Article 12
-41856 content.Main Page/Article 13
-41857 content.Main Page/Article 2
-41858 content.Main Page/Article 3
-41859 content.Main Page/Article 4
-41860 content.Main Page/Article 5
-41861 content.Main Page/Article 6
-41862 content.Main Page/Article 7
-41863 content.Main Page/Article 8
-41864 content.Main Page/Article 9
-41865 content.Main Page/Header
-41866 content.Main Page/Introduction
-41867 content.Main Page/Knowledge groups
-41868 content.Main Page/Other languages
-41869 content.Main Page/Sister projects
-41870 content.Main Page/Test 1
-41871 content.Main Page/Test 1/Archive 1
-41872 content.Main geographical features in France
-41873 content.Main-Franconian
+41850 partA.Main
+41851 partA.Main Page
+41852 partA.Main Page/Article 1
+41853 partA.Main Page/Article 10
+41854 partA.Main Page/Article 11
+41855 partA.Main Page/Article 12
+41856 partA.Main Page/Article 13
+41857 partA.Main Page/Article 2
+41858 partA.Main Page/Article 3
+41859 partA.Main Page/Article 4
+41860 partA.Main Page/Article 5
+41861 partA.Main Page/Article 6
+41862 partA.Main Page/Article 7
+41863 partA.Main Page/Article 8
+41864 partA.Main Page/Article 9
+41865 partA.Main Page/Header
+41866 partA.Main Page/Introduction
+41867 partA.Main Page/Knowledge groups
+41868 partA.Main Page/Other languages
+41869 partA.Main Page/Sister projects
+41870 partA.Main Page/Test 1
+41871 partA.Main Page/Test 1/Archive 1
+41872 partA.Main geographical features in France
+41873 partA.Main-Franconian
 41874 Mainbernheim
 41875 Maine
 41876 Maine-et-Loire
@@ -47115,7 +47115,7 @@
 47114 Open Road (Bryan Adams song)
 47115 Open Site
 47116 Open block
-47117 Open content
+47117 Open partA
 47118 Open proxy
 47119 Open source
 47120 OpenBSD
@@ -51640,7 +51640,7 @@
 51639 Rheumatism
 51640 Rhine Falls
 51641 Rhine River
-51642 Rhine-content.Main-Danube Canal
+51642 Rhine-partA.Main-Danube Canal
 51643 Rhineland-Palatinate
 51644 Rhinoceros
 51645 Rho (letter)
@@ -62731,7 +62731,7 @@
 62730 Water Tower Place
 62731 Water Valley, Kentucky
 62732 Water buffalo
-62733 Water content
+62733 Water partA
 62734 Water cycle
 62735 Water heating
 62736 Water hemisphere
@@ -62941,7 +62941,7 @@
 62940 West Buechel, Kentucky
 62941 West Chicago, Illinois
 62942 West Coast
-62943 West Coast content.Main Line
+62943 West Coast partA.Main Line
 62944 West Coast blues
 62945 West Croydon
 62946 West Edmonton Mall
