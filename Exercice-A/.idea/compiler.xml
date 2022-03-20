@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FinalProject" />
-        <module name="Exercice-B" />
         <module name="wordcount_sparksql" />
+        <module name="FinalProject" />
+        <module name="Exercice-A" />
+        <module name="Exercice-B" />
       </profile>
     </annotationProcessing>
   </component>

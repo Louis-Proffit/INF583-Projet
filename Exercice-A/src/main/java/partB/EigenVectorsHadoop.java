@@ -86,8 +86,8 @@ public class EigenVectorsHadoop {
             String[] split = value.toString().split(" ");
             in.set(Integer.parseInt(split[0]));
             for(int i = 1 ; i < split.length ; i++){
-                ifl.i = Integer.parseInt(split[i]));
-                ifl.setF((float) (1.0 / size));
+                ifl.i = Integer.parseInt(split[i]);
+                //ifl.setF((float) (1.0 / size));
                 context.write(in, ifl);
             }
         }
@@ -114,8 +114,8 @@ public class EigenVectorsHadoop {
      */
     public static class ReducerMultMatrix extends Reducer<IntWritable, IntFloatWritable, IntWritable, IntFloatWritable>{
 
-        private IntFloatWritable ifw = new IntFloatWritable();
-        private IntWritable i = new IntWritable();
+        private final IntFloatWritable ifw = new IntFloatWritable();
+        private final IntWritable i = new IntWritable();
 
         @Override
         protected void reduce(IntWritable key, Iterable<IntFloatWritable> values, Reducer<IntWritable, IntFloatWritable, IntWritable, IntFloatWritable>.Context context) throws IOException, InterruptedException {
