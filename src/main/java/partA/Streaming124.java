@@ -3,7 +3,6 @@ package partA;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
@@ -15,10 +14,12 @@ import org.apache.spark.streaming.api.java.JavaPairDStream;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Tuple2;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 
-public class Streaming12 {
+public class Streaming124 {
 
     public static JavaDStream<Integer> getStream(JavaStreamingContext jssc) {
         Queue<JavaRDD<String>> queue = new LinkedList<>();
@@ -104,19 +105,83 @@ public class Streaming12 {
                     }
                 }
         );
+    }
 
-        /*sum.foreachRDD(new VoidFunction<JavaPairRDD<Integer, Tuple2<Double, Integer>>>() {
-            @Override
-            public void call(JavaPairRDD<Integer, Tuple2<Double, Integer>> integerTuple2JavaPairRDD) throws Exception {
-                Tuple2<Integer, Tuple2<Double, Integer>> result = integerTuple2JavaPairRDD.reduce(new Function2<Tuple2<Integer, Tuple2<Double, Integer>>, Tuple2<Integer, Tuple2<Double, Integer>>, Tuple2<Integer, Tuple2<Double, Integer>>>() {
-                    @Override
-                    public Tuple2<Integer, Tuple2<Double, Integer>> call(Tuple2<Integer, Tuple2<Double, Integer>> v1, Tuple2<Integer, Tuple2<Double, Integer>> v2) throws Exception {
-                        return new Tuple2<>(1, new Tuple2<>(v1._2._1 / v1._2._2, v1._2._2));
-                    }
-                });
-                System.out.println("Question 2 - " + result._2._1 / result._2._2);
+    private static int hash(int integer){
+        return integer;
+    }
+
+    private static int rho(int hash){
+        int divider = 2;
+        for(int i = 0 ; i < 7 ; i++){
+            if (hash % divider == 0) {
+                return i;
             }
-        });*/
+            divider = divider * 2;
+        }
+        return 7;
+    }
+
+    public static long getCountFromR(int R){
+        double psi = 0.77351;
+        return (long) (Math.pow(2,R) / psi);
+    }
+
+    public static void q4(JavaDStream<Integer> integers){
+        int L = 7; // 2^7 > 100
+        JavaDStream<Integer> rhoStream = integers.map(
+                new Function<Integer, Integer>() {
+                    @Override
+                    public Integer call(Integer integer) throws Exception {
+                        return rho(hash(integer));
+                    }
+                }
+        );
+        JavaDStream<Set<Integer>> bitmap = rhoStream.map(
+                new Function<Integer, Set<Integer>>() {
+                    @Override
+                    public Set<Integer> call(Integer integer) throws Exception {
+                        Set<Integer> result = new HashSet<>();
+                        result.add(integer);
+                        return result;
+                    }
+                }
+        );
+
+        JavaDStream<Set<Integer>> reducedBitmap = bitmap.reduce(
+                new Function2<Set<Integer>, Set<Integer>, Set<Integer>>() {
+                    @Override
+                    public Set<Integer> call(Set<Integer> v1, Set<Integer> v2) throws Exception {
+                        v1.addAll(v2);
+                        return v1;
+                    }
+                }
+        );
+
+        reducedBitmap.foreachRDD(
+                new VoidFunction<JavaRDD<Set<Integer>>>() {
+                    @Override
+                    public void call(JavaRDD<Set<Integer>> setJavaRDD) throws Exception {
+                        if (!setJavaRDD.isEmpty()){
+                            setJavaRDD.foreach(
+                                    new VoidFunction<Set<Integer>>() {
+                                        @Override
+                                        public void call(Set<Integer> integers) throws Exception {
+                                            int R = L;
+                                            for (int i = 0 ; i < L ; i++){
+                                                if (!integers.contains(i)){
+                                                    R = i;
+                                                    break;
+                                                }
+                                            }
+                                            System.out.println("Question 4 - " + getCountFromR(R));
+                                        }
+                                    }
+                            );
+                        }
+                    }
+                }
+        );
     }
 
     public static void main(String[] args) {
@@ -129,8 +194,8 @@ public class Streaming12 {
         JavaDStream<Integer> stream = getStream(jssc);
 
         q1(stream);
-
         q2(stream);
+        q4(stream);
 
         jssc.start();
         try {

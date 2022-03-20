@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e4e8d0d-f57b-4bae-bd01-1ea262a48a84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/graph/edgelist.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/graph/idslabels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/graph/vector.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/integers/integers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partA/MainB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partA/q1234.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partA/q12streaming.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partA/q4streaming.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/EigenVectorsHadoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/EigenVectorsSpark.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/EigenVectorsThreads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/Matrixmul.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-A/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercice-B/src/main/java/content/q4streamingbis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vector.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partA/Streaming12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partA/Streaming124.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partA/Streaming4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager" selected="Application.EigenVectorsSpark">
+  <component name="RunManager" selected="Application.Streaming124">
     <configuration name="EigenVectorsSpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="partB.EigenVectorsSpark" />
@@ -112,9 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Streaming12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Streaming124" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="partA.Streaming12" />
+      <option name="MAIN_CLASS_NAME" value="partA.Streaming124" />
+      <module name="Exercice-A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="partA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Streaming4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="partA.Streaming4" />
       <module name="Exercice-A" />
       <extension name="coverage">
         <pattern>
@@ -130,13 +118,15 @@
       <item itemvalue="Application.EigenVectorsThreads" />
       <item itemvalue="Application.EigenVectorsSpark" />
       <item itemvalue="Application.Spark1234" />
-      <item itemvalue="Application.Streaming12" />
+      <item itemvalue="Application.Streaming4" />
+      <item itemvalue="Application.Streaming124" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Streaming124" />
+        <item itemvalue="Application.Streaming4" />
         <item itemvalue="Application.EigenVectorsSpark" />
         <item itemvalue="Application.Spark1234" />
-        <item itemvalue="Application.Streaming12" />
       </list>
     </recent_temporary>
   </component>

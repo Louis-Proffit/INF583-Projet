@@ -5,11 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>inf583</groupId>
-  <artifactId>Exercice-A</artifactId>
+  <artifactId>INF583-Projet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
-  <name>partA</name>
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
