@@ -114,7 +114,7 @@ public class EigenVectorsSpark {
         Logger.getLogger("org").setLevel(Level.ERROR);
         Logger.getLogger("akka").setLevel(Level.ERROR);
 
-        SparkSession spark = SparkSession.builder().appName("Java Spark SQL for Twitter").config("spark.master", "local[*]").getOrCreate();
+        SparkSession spark = SparkSession.builder().appName("Java Spark SQL for INF583").config("spark.master", "local[*]").getOrCreate();
         Dataset<Row> rawLinks = spark.read().option("header", "false").option("inferSchema", "true").csv("graph/edgelist.txt");
         Dataset<Row> rawVector = spark.read().option("header", "false").option("inferSchema", "true").csv("graph/vector.txt");
         Dataset<Row> rawNodes = spark.read().option("header", "false").option("inferSchema", "true").csv("graph/idslabels.txt");
