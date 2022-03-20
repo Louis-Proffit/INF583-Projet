@@ -114,8 +114,8 @@ public class EigenVectorsHadoop {
      */
     public static class ReducerMultMatrix extends Reducer<IntWritable, IntFloatWritable, IntWritable, IntFloatWritable>{
 
-        private IntFloatWritable ifw = new IntFloatWritable();
-        private IntWritable i = new IntWritable();
+        private final IntFloatWritable ifw = new IntFloatWritable();
+        private final IntWritable i = new IntWritable();
 
         @Override
         protected void reduce(IntWritable key, Iterable<IntFloatWritable> values, Reducer<IntWritable, IntFloatWritable, IntWritable, IntFloatWritable>.Context context) throws IOException, InterruptedException {

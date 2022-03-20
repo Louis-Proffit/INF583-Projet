@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7304809-78a9-471e-99f5-79bde368b8cc" name="Changes" comment="" />
+    <list default="true" id="d7304809-78a9-471e-99f5-79bde368b8cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Exercice-A/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice-A/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/EigenVectorsHadoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercice-A/src/main/java/partB/EigenVectorsHadoop.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
