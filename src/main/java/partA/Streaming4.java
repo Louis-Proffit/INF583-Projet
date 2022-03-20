@@ -16,7 +16,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-public class q4streaming {
+public class Streaming4 {
 
     public static JavaDStream<Integer> getStream(JavaStreamingContext jssc){
         Queue<JavaRDD<String>> queue = new LinkedList<>();
