@@ -145,18 +145,17 @@ public class EigenVectorsThreads {
             return;
         }
 
+        Util.start();
         double start = System.currentTimeMillis();
         for (int i = 0 ; i < iterations ; i++){
             vector = prod(edges, vector, numThreads, size);
             normalize(vector, numThreads, size);
+            Util.step();
         }
 
         String result = getMostPopularArticle(nodes, vector, size);
-
         double end = System.currentTimeMillis();
 
-        System.out.println("Time spend \t : " + (end - start) + "ms");
-        System.out.println("Result \t \t : " + result);
-
+        Util.end(result, start, end);
     }
 }

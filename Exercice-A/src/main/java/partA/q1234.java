@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 import org.apache.spark.api.java.function.ReduceFunction;
 import org.apache.spark.sql.*;
 
-public class Main {
+public class q1234 {
 
     private static void displayResult(int question, Object result){
         System.out.println(result);

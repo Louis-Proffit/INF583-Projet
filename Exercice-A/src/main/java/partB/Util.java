@@ -10,6 +10,23 @@ public class Util {
     private static final String edgesPath = "graph/edgelist.txt";
     private static final String nodesPath = "graph/idslabels.txt";
 
+    public static void start(){
+        System.out.println("Starting");
+    }
+
+    public static void step(){
+        System.out.print(".");
+    }
+
+    public static void end(String result, double t1, double t2){
+        System.out.println();
+        System.out.println("Finished");
+        //System.out.println("----------------------------");
+        System.out.println("Result = \"" + result + "\"");
+        //System.out.println("----------------------------");
+        System.out.println("Time used for computation : " + (t2 - t1) + "ms");
+    }
+
     public static HashMap<Integer, Integer[]> getEdges() throws FileNotFoundException {
 
         HashMap<Integer, Integer[]> result = new HashMap<>();
