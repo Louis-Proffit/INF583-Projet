@@ -8,6 +8,7 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.api.java.function.VoidFunction;
+import org.apache.spark.internal.config.R;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaDStream;
 import org.apache.spark.streaming.api.java.JavaPairDStream;
@@ -107,19 +108,27 @@ public class Streaming124 {
         );
     }
 
-    private static int hash(int integer){
-        return integer;
+    private static int hash(int integer, int L){
+        int res = (int) ((347*integer + 7) % Math.pow(2,L));
+        return res;
     }
 
-    private static int rho(int hash){
-        int divider = 2;
-        for(int i = 0 ; i < 7 ; i++){
-            if (hash % divider == 0) {
-                return i;
+    private static int rho(int hash, int L) {
+        if (hash == 0) {
+            return L;
+        } else {
+
+            int result = 0;
+            int divider = 2;
+            while (hash % divider == 0) {
+                divider = 2 * divider;
+                result++;
+
             }
-            divider = divider * 2;
+            //System.out.println(hash);
+            //System.out.println(result);
+            return result;
         }
-        return 7;
     }
 
     public static long getCountFromR(int R){
@@ -128,12 +137,12 @@ public class Streaming124 {
     }
 
     public static void q4(JavaDStream<Integer> integers){
-        int L = 7; // 2^7 > 100
+        int L = 10 ; // 2^10 > 1000 the number of elements in the set
         JavaDStream<Integer> rhoStream = integers.map(
                 new Function<Integer, Integer>() {
                     @Override
                     public Integer call(Integer integer) throws Exception {
-                        return rho(hash(integer));
+                        return rho(hash(integer, L), L);
                     }
                 }
         );
@@ -169,6 +178,7 @@ public class Streaming124 {
                                         public void call(Set<Integer> integers) throws Exception {
                                             int R = L;
                                             for (int i = 0 ; i < L ; i++){
+                                                System.out.println(integers);
                                                 if (!integers.contains(i)){
                                                     R = i;
                                                     break;
@@ -190,6 +200,7 @@ public class Streaming124 {
 
         SparkConf sparkConf = new SparkConf().setMaster("local[*]").setAppName("INF583");
         JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(5));
+
 
         JavaDStream<Integer> stream = getStream(jssc);
 
