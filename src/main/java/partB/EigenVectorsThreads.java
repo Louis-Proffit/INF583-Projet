@@ -30,7 +30,7 @@ public class EigenVectorsThreads {
         Thread[] threads = new Thread[threadsCount];
         for (int i = 0 ; i < threadsCount ; i++){
             final Integer threadStart = interPerThread * i;
-            final Integer threadEnd = interPerThread * (i + 1);
+            final Integer threadEnd = (i == threadsCount - 1 ?size : size / threadsCount * (i + 1));
             Thread thread = new Thread(
                     new Runnable() {
                         @Override
@@ -67,7 +67,7 @@ public class EigenVectorsThreads {
 
         for (int i = 0 ; i < threadsCount ; i++){
             final Integer threadStart = iterPerThread * i;
-            final Integer threadEnd = iterPerThread * (i + 1);
+            final Integer threadEnd = (i == threadsCount - 1 ? size : size / threadsCount * (i + 1));
             final int finalI = i;
             Thread thread = new Thread(
                     new Runnable() {
@@ -93,7 +93,7 @@ public class EigenVectorsThreads {
         final float norm = (float) Math.sqrt(sum);
         for (int i = 0 ; i < threadsCount ; i++){
             final Integer threadStart = size / threadsCount * i;
-            final Integer threadEnd = (i == threadsCount - 1 ? size / threadsCount * (i + 1) : size);
+            final Integer threadEnd = (i == threadsCount - 1 ? size : size / threadsCount * (i + 1));
             Thread thread = new Thread(
                     new Runnable() {
 
@@ -108,6 +108,7 @@ public class EigenVectorsThreads {
             threads[i] = thread;
             thread.start();
         }
+
         Util.joinThreads(threads);
         return vector;
     }
@@ -129,7 +130,7 @@ public class EigenVectorsThreads {
     public static void main(String[] args) {
 
         int iterations = Integer.parseInt(args[0]);
-        int numThreads = 5;
+        int numThreads = 2;
 
         HashMap<Integer, Integer[]> edges;
         HashMap<Integer, String> nodes;

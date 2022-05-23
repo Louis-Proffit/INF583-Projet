@@ -13,6 +13,9 @@ import org.jetbrains.annotations.NotNull;
 import java.io.*;
 import java.util.*;
 
+/**
+ * This implementation doesn't work
+ */
 public class EigenVectorsHadoop {
 
     private static final int size = 64675;
@@ -46,32 +49,6 @@ public class EigenVectorsHadoop {
             return Integer.compare(i, o.i);
         }
     }
-
-    /*public static class ListFloatWritable implements Writable {
-
-        public List<Integer> l;
-        public float value;
-
-
-        @Override
-        public void write(DataOutput dataOutput) throws IOException {
-            dataOutput.writeInt(l.size());
-            for (Integer iw : l) {
-                dataOutput.writeInt(iw);
-            }
-            dataOutput.writeFloat(value);
-        }
-
-        @Override
-        public void readFields(DataInput dataInput) throws IOException {
-            int size = dataInput.readInt();
-            l = new ArrayList<>(size);
-            for (int j = 0 ; j < size ; j++){
-                l.add(dataInput.readInt());
-            }
-            value = dataInput.readFloat();
-        }
-    }*/
 
 
     public static class MapperMatrix

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e4e8d0d-f57b-4bae-bd01-1ea262a48a84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/partA/Streaming124.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partA/Streaming124.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsHadoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsHadoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsThreads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +52,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager" selected="Application.Streaming124">
+  <component name="RunManager" selected="JUnit.Tets.test">
     <configuration name="EigenVectorsSpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="partB.EigenVectorsSpark" />
       <module name="Exercice-A" />
-      <option name="PROGRAM_PARAMETERS" value="100" />
+      <option name="PROGRAM_PARAMETERS" value="50" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="partB.*" />
@@ -65,9 +69,10 @@
       </method>
     </configuration>
     <configuration name="EigenVectorsThreads" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="partB.EigenVectorsThreads" />
-      <module name="Project-INF583" />
-      <option name="PROGRAM_PARAMETERS" value="100" />
+      <module name="Exercice-A" />
+      <option name="PROGRAM_PARAMETERS" value="50" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="partB.*" />
@@ -97,7 +102,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="partA.Streaming124" />
-      <module name="INF583-Projet" />
+      <module name="Exercice-A" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="partA.*" />
@@ -121,19 +126,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tets.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercice-A" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tets" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.EigenVectorsThreads" />
       <item itemvalue="Application.EigenVectorsSpark" />
       <item itemvalue="Application.Spark1234" />
       <item itemvalue="Application.Streaming4" />
       <item itemvalue="Application.Streaming124" />
+      <item itemvalue="JUnit.Tets.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Streaming124" />
-        <item itemvalue="Application.Streaming4" />
+        <item itemvalue="JUnit.Tets.test" />
         <item itemvalue="Application.EigenVectorsSpark" />
         <item itemvalue="Application.Spark1234" />
+        <item itemvalue="Application.Streaming124" />
+        <item itemvalue="Application.Streaming4" />
       </list>
     </recent_temporary>
   </component>

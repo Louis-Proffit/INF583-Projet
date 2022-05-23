@@ -109,8 +109,7 @@ public class Streaming124 {
     }
 
     private static int hash(int integer, int L){
-        int res = (int) ((347*integer + 7) % Math.pow(2,L));
-        return res;
+        return (int) ((347*integer + 7) % Math.pow(2,L)); // Split the values uniformly between 0 and 2^L
     }
 
     private static int rho(int hash, int L) {
@@ -125,8 +124,6 @@ public class Streaming124 {
                 result++;
 
             }
-            //System.out.println(hash);
-            //System.out.println(result);
             return result;
         }
     }
@@ -157,38 +154,30 @@ public class Streaming124 {
                 }
         );
 
-        JavaDStream<Set<Integer>> reducedBitmap = bitmap.reduce(
-                new Function2<Set<Integer>, Set<Integer>, Set<Integer>>() {
-                    @Override
-                    public Set<Integer> call(Set<Integer> v1, Set<Integer> v2) throws Exception {
-                        v1.addAll(v2);
-                        return v1;
-                    }
-                }
-        );
-
-        reducedBitmap.foreachRDD(
+        bitmap.foreachRDD(
                 new VoidFunction<JavaRDD<Set<Integer>>>() {
                     @Override
                     public void call(JavaRDD<Set<Integer>> setJavaRDD) throws Exception {
                         if (!setJavaRDD.isEmpty()){
-                            setJavaRDD.foreach(
-                                    new VoidFunction<Set<Integer>>() {
+                            Set<Integer> integers = setJavaRDD.reduce(
+                                    new Function2<Set<Integer>, Set<Integer>, Set<Integer>>() {
                                         @Override
-                                        public void call(Set<Integer> integers) throws Exception {
-                                            int R = L;
-                                            for (int i = 0 ; i < L ; i++){
-                                                System.out.println(integers);
-                                                if (!integers.contains(i)){
-                                                    R = i;
-                                                    break;
-                                                }
-                                            }
-                                            System.out.println("Question 4 - " + getCountFromR(R));
+                                        public Set<Integer> call(Set<Integer> v1, Set<Integer> v2) throws Exception {
+                                            v1.addAll(v2);
+                                            return v1;
                                         }
                                     }
                             );
+                            int R = L;
+                            for (int i = 0 ; i < L ; i++){
+                                if (!integers.contains(i)){
+                                    R = i;
+                                    break;
+                                }
+                            }
+                            System.out.println("Question 4 - " + getCountFromR(R));
                         }
+
                     }
                 }
         );
@@ -200,7 +189,6 @@ public class Streaming124 {
 
         SparkConf sparkConf = new SparkConf().setMaster("local[*]").setAppName("INF583");
         JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(5));
-
 
         JavaDStream<Integer> stream = getStream(jssc);
 
