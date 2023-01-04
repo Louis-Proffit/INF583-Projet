@@ -64,7 +64,6 @@ public class EigenVectorsHadoop {
             in.set(Integer.parseInt(split[0]));
             for(int i = 1 ; i < split.length ; i++){
                 ifl.i = Integer.parseInt(split[i]);
-                // ifl.setF((float) (1.0 / size));
                 context.write(in, ifl);
             }
         }

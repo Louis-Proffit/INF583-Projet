@@ -41868,8 +41868,8 @@
 41867 partA.Main Page/Knowledge groups
 41868 partA.Main Page/Other languages
 41869 partA.Main Page/Sister projects
-41870 partA.Main Page/Test 1
-41871 partA.Main Page/Test 1/Archive 1
+41870 partA.Main Page/TestsRuntime 1
+41871 partA.Main Page/TestsRuntime 1/Archive 1
 41872 partA.Main geographical features in France
 41873 partA.Main-Franconian
 41874 Mainbernheim
@@ -45732,7 +45732,7 @@
 45731 Neuwied
 45732 Nevada
 45733 Nevada Solar One
-45734 Nevada Test Site
+45734 Nevada TestsRuntime Site
 45735 Nevada, Iowa
 45736 Nevado del Ruiz
 45737 Nevele
@@ -58255,8 +58255,8 @@
 58254 Tessa Virtue
 58255 Tessel
 58256 Tessenderlo
-58257 Test
-58258 Test tube
+58257 TestsRuntime
+58258 TestsRuntime tube
 58259 Testicle
 58260 Testicular cancer
 58261 Testosterone

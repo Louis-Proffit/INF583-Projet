@@ -1,14 +1,8 @@
 package partB;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-
-import static partB.Util.getEdges;
-import static partB.Util.getNodes;
 
 public class EigenVectorsThreads {
 
@@ -59,27 +53,23 @@ public class EigenVectorsThreads {
         return result;
     }
 
-    public static Float[] normalize(final Float[] vector, int threadsCount, int size){
+    public static void normalize(final Float[] vector, int threadsCount, int size){
         final Float[] sums = new Float[threadsCount];
         Thread[] threads = new Thread[threadsCount];
 
         int iterPerThread = size / threadsCount;
 
         for (int i = 0 ; i < threadsCount ; i++){
-            final Integer threadStart = iterPerThread * i;
-            final Integer threadEnd = (i == threadsCount - 1 ? size : size / threadsCount * (i + 1));
+            final int threadStart = iterPerThread * i;
+            final int threadEnd = (i == threadsCount - 1 ? size : size / threadsCount * (i + 1));
             final int finalI = i;
             Thread thread = new Thread(
-                    new Runnable() {
-
-                        @Override
-                        public void run() {
-                            float result = 0;
-                            for (int i = threadStart ; i < threadEnd ; i++){
-                                result += Math.pow(vector[i], 2);
-                            }
-                            sums[finalI] = result;
+                    () -> {
+                        float result = 0;
+                        for (int i1 = threadStart; i1 < threadEnd ; i1++){
+                            result += Math.pow(vector[i1], 2);
                         }
+                        sums[finalI] = result;
                     }
             );
             threads[i] = thread;
@@ -110,7 +100,6 @@ public class EigenVectorsThreads {
         }
 
         Util.joinThreads(threads);
-        return vector;
     }
 
     public static String getMostPopularArticle(Map<Integer, String> nodes, Float[] vector, int size){
