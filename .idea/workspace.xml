@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e4e8d0d-f57b-4bae-bd01-1ea262a48a84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/INF583-Projet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partA/Streaming124.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partA/Streaming124.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsHadoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsHadoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partB/EigenVectorsThreads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,115 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
-  </component>
-  <component name="RunManager" selected="JUnit.Tets.test">
-    <configuration name="EigenVectorsSpark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="partB.EigenVectorsSpark" />
-      <module name="Exercice-A" />
-      <option name="PROGRAM_PARAMETERS" value="50" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="partB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EigenVectorsThreads" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="partB.EigenVectorsThreads" />
-      <module name="Exercice-A" />
-      <option name="PROGRAM_PARAMETERS" value="50" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="partB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Spark1234" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="partA.Spark1234" />
-      <module name="Exercice-A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="partA.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Streaming124" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="partA.Streaming124" />
-      <module name="Exercice-A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="partA.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Streaming4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="partA.Streaming4" />
-      <module name="Exercice-A" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="partA.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tets.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercice-A" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tets" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.EigenVectorsThreads" />
-      <item itemvalue="Application.EigenVectorsSpark" />
-      <item itemvalue="Application.Spark1234" />
-      <item itemvalue="Application.Streaming4" />
-      <item itemvalue="Application.Streaming124" />
-      <item itemvalue="JUnit.Tets.test" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.Tets.test" />
-        <item itemvalue="Application.EigenVectorsSpark" />
-        <item itemvalue="Application.Spark1234" />
-        <item itemvalue="Application.Streaming124" />
-        <item itemvalue="Application.Streaming4" />
-      </list>
-    </recent_temporary>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -162,8 +59,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647768587461</updated>
+      <workItem from="1672819217888" duration="356000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
